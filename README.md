@@ -1,4 +1,4 @@
-# javascript_practice 
+# FrontEnd_practice 
 Awesome small projects to practice on your Front end (HTML,CSS,Javascript and DOM) .
 
 Number of Projects : 50
