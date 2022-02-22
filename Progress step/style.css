@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    box-sizing: border-box ;
+}
+body{
+    font-family: 'Mulish' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    text-align: center;
+}
+.progresscontainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 350px;
+}
+.progresscontainer::before{
+    content: "";
+    position: absolute;
+    background-color: lightgrey;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.progress{
+    position: absolute;
+    background-color: blue;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.circle{
+    background-color: white;
+    color: blue;
+    border: 3px solid lightgrey;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.4s ease;
+}
+.circle.active{
+    border-color: blue;
+}
+.btn{
+    color: white;
+    background-color:blue;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:disabled{
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
