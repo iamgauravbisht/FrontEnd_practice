@@ -5,8 +5,8 @@ Number of Projects : 50
 
 ## Projects
 - [x] Expanding cards
-- [ ] Progress steps
-- [ ] Rotating Navigation
+- [x] Progress steps
+- [x] Rotating Navigation
 - [ ] Hidden Search Widget
 - [ ] Blurry Loading
 - [ ] Scroll Animation
